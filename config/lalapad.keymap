@@ -24,14 +24,16 @@
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
         <&zip_xy_scaler 3 2>;
-        // <&zip_temp_layer MOUSE_R_LAYER 500>; automouse不要なのでコメントアウト
+
+    // <&zip_temp_layer MOUSE_R_LAYER 500>; automouse不要なのでコメントアウト
 
     lowspeedmode {
         layers = <SECONDARY_LAYER>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_scaler 3 5>;
-            // <&zip_temp_layer MOUSE_R_LAYER 500>; 不要なのでコメントアウト
+
+        // <&zip_temp_layer MOUSE_R_LAYER 500>; 不要なのでコメントアウト
     };
 
     scroller {
@@ -242,7 +244,7 @@
         SYSTEM_LAYER {
             display-name = "system_layer";
             sensor-bindings =
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                <&inc_dec_kp K_VOLUME_DOWN K_VOLUME_UP>,
                 <&volume_up_down>;
 
             bindings = <
