@@ -202,6 +202,19 @@
         };
     };
 
+    macros {
+        close_quote: close_quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp SINGLE_QUOTE &kp SINGLE_QUOTE>,
+                <&macro_release>,
+                <&kp LEFT>;
+
+            label = "CLOSE_QUOTE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -211,7 +224,7 @@
 
             bindings = <
 &kp ESC      &kp Q     &kp W       &kp E            &kp R        &kp T          &kp Y          &kp U          &kp I            &kp O       &mt LEFT_BRACKET P  &mt RIGHT_BRACKET EQUAL
-&kp LCTRL    &kp A     &kp S       &kp D            &kp F        &kp G          &kp H          &kp J          &kp K            &kp L       &kp MINUS           &mt SEMI APOSTROPHE
+&kp LCTRL    &kp A     &kp S       &kp D            &kp F        &kp G          &kp H          &kp J          &kp K            &kp L       &kp SEMI            &kp MINUS
 &kp LSHFT    &kp Z     &kp X       &kp C            &kp V        &kp B          &kp N          &kp M          &kp COMMA        &kp PERIOD  &kp FSLH            &kp BSLH
 &lt 8 LANG2  &kp LALT  &kp LGUI    &lt 2 TAB        &lt 1 SPACE  &lt 3 LANG2    &lt 3 LANG1    &kp BACKSPACE  &lt 1 ENTER      &kp GRAVE   &kp EQUAL           &lt 8 DELETE
                        &allow_end  &allow_pagedown  &allow_home  &allow_pageup  &allow_pageup  &allow_home    &allow_pagedown  &allow_end
@@ -225,7 +238,7 @@
             bindings = <
 &trans  &trans    &mkp MB4        &kp UP           &mkp MB5   &trans    &trans    &mkp MB4  &kp UP           &mkp MB5   &trans   &trans
 &trans  &kp HOME  &kp LEFT_ARROW  &kp DOWN         &kp RIGHT  &kp END   &kp HOME  &kp LEFT  &kp DOWN         &kp RIGHT  &kp END  &trans
-&trans  &trans    &trans          &kp PRINTSCREEN  &trans     &trans    &trans    &trans    &kp PRINTSCREEN  &trans     &trans   &trans
+&trans  &trans    &trans          &kp PRINTSCREEN  &trans     &trans    &trans    &mkp MB4  &kp PRINTSCREEN  &mkp MB5   &trans   &trans
 &trans  &trans    &trans          &trans           &trans     &kp CAPS  &trans    &trans    &trans           &trans     &trans   &trans
                   &trans          &trans           &trans     &trans    &trans    &trans    &trans           &trans
             >;
