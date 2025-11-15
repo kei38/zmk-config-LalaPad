@@ -311,11 +311,11 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC    &kp Q     &kp W         &kp E        &kp R            &kp T               &kp Y                &kp U          &kp I            &kp O         &kp P                 &mt GRAVE EQUAL
-&kp LCTRL  &kp A     &kp S         &kp D        &kp F            &kp G               &kp H                &kp J          &kp K            &kp L         &mt2 SEMICOLON MINUS  &close_quote_morph
-&kp LSHFT  &kp Z     &kp X         &kp C        &kp V            &kp B               &kp N                &kp M          &kp COMMA        &kp PERIOD    &kp FSLH              &kp BSLH
-&mo 8      &kp LALT  &kp LEFT_GUI  &lt 2 TAB    &lt 1 SPACE      &lt 3 LEFT_BRACKET  &lt 3 RIGHT_BRACKET  &kp BACKSPACE  &lt 1 ENTER      &kp LEFT_GUI  &mo 4                 &lt 4 DELETE
-                     &kp LC(TAB)   &kp LA(TAB)  &kp LC(LS(TAB))  &kp LA(LS(TAB))     &allow_pageup        &allow_home    &allow_pagedown  &allow_end
+&kp ESC    &kp Q     &kp W         &kp E                 &kp R            &kp T               &kp Y                &kp U          &kp I            &kp O         &kp P                 &mt GRAVE EQUAL
+&kp LCTRL  &kp A     &kp S         &kp D                 &kp F            &kp G               &kp H                &kp J          &kp K            &kp L         &mt2 SEMICOLON MINUS  &close_quote_morph
+&kp LSHFT  &kp Z     &kp X         &kp C                 &kp V            &kp B               &kp N                &kp M          &kp COMMA        &kp PERIOD    &kp FSLH              &kp BSLH
+&mo 8      &kp LALT  &kp LEFT_GUI  &lt 2 TAB             &lt 1 SPACE      &lt 3 LEFT_BRACKET  &lt 3 RIGHT_BRACKET  &kp BACKSPACE  &lt 1 ENTER      &kp LEFT_GUI  &mo 4                 &lt 4 DELETE
+                     &kp LC(TAB)   &alt_shift_tab_morph  &kp LC(LS(TAB))  &alt_tab_morph      &allow_pageup        &allow_home    &allow_pagedown  &allow_end
             >;
         };
 
